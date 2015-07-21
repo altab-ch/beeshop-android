@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.02">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_search"
+            android:layout_weight="1" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sea"
+            android:id="@+id/button2"
+            android:layout_weight="0.09"
+            android:onClick="search"
+            android:nestedScrollingEnabled="false" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/button3"
+            android:layout_weight="0.09" />
+    </LinearLayout>
+
+
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="327dp"
+            android:id="@+id/listView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffe0ff6a"
+            android:layout_weight="0.94" />
+
+</LinearLayout>
